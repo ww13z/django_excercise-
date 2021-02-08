@@ -1,0 +1,16 @@
+{% extends 'rango/base.html' %}
+{%  load static %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+        <h1>This tutorial has been put together by {{ myname }}</h1>
+    <div>
+        <img src="{% static "images/yuhangyuan.jpg" %}"
+             alt="Picture of yuhangyuan"/>
+        <img src="{{ MEDIA_URL }}cat.jpg"/>
+    </div>
+    <strong>visits:{{ visits }}</strong>
+{% endblock %}
